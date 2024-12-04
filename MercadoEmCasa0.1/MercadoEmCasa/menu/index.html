@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado em Casa</title>
+    <link rel="stylesheet" href="styles/globals.css">
+</head>
+<body>
+    <!--Menu head-->
+    <div class="navbar show-menu">
+        <div class="header-inner-content">
+            <h1 class="logo">Mercado <span>Em Casa</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sessoes">Sessões</a></li>
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <a href="sacola.html">
+                    <img src="imagens/cart.png" alt="sacola">
+                </a>
+                <img src="imagens/menu.png" alt="" class="menu-button">
+            </div>
+        </div>
+    </div>
+    <!--fim menu-->
+
+    <!--Vitrine Promoções-->
+    <header id="home">
+        <div class="header-inner-content">
+            <div class="header-buttom-side">
+                <div class="header-buttom-side-left">
+                    <h2>Promoções Especiais</h2>
+                    <p>Promoções como essa você só encontra aqui, no Mercado em Casa! Sua   plataforma de compras que traz o mercado até o conforto do seu sofá.
+                    </p>
+                    <button>Ver Agora</button>
+                </div>
+                <div class="header-buttom-side-right">
+                    <img src="imagens/chocolateGarotoCaixa.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--fim Vitrine Promoções-->
+
+    <!--Vitrine Produtos Populares-->
+        <main id="produtos">
+            <div class="gray-background">
+                <div class="page-inner-content">
+                    <div class="cols cols-3">
+                        <img src="imagens/picanha1FundoPx250.png" alt="promoção">
+                        <img src="imagens/leitePiracanjubaFundoPx250.png" alt="">
+                        <img src="imagens/sucrilhosFundoPx250.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="page-inner-content">
+                    <h3 class="section-title">Produtos Populares</h3> 
+                    <div class="subtitle-underline"></div>
+                    <div class="cols cols-4">
+                        <div class="product">
+                            <img src="imagens/banana.jpeg" alt="">
+                            <p class="product-name">Banana</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="product-price"><span>R$</span>10,00 <span>Kg</span></p>
+                        </div>
+                        <div class="product">
+                            <img src="imagens/pao-de-queijoPx233.png" alt="">
+                            <p class="product-name">Pão de queijo</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price"><span>R$</span>33,50 </p>
+                        </div>
+                        <div class="product">
+                            <img src="imagens/arroz 5kgPx233.jpg" alt="">
+                            <p class="product-name">Arroz Carunehão 5Kg</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price"><span>R$</span>24,99 </p>
+                        </div>
+                        <div class="product">
+                            <img src="imagens/lactaDiamanteNegroPx233.jpg" alt="">
+                            <p class="product-name">Lacta Diamante Negro</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                            <p class="product-price"><span>R$</span>9,99 </p>
+                        </div>
+                        <div class="product">
+                            <img src="imagens/desodoranteRexonaPx233.png" alt="">
+                            <p class="product-name">Desodorante Rexona</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="product-price"><span>R$</span>4,95 </p>
+                        </div>
+                        <div class="product">
+                            <img src="imagens/sabaoPoMinuanoPx233.png" alt="">
+                            <p class="product-name">Sabão Pó Minuano 4Kg</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;&#9734;</p>
+                            <p class="product-price"><span>R$</span>43,18 </p>
+                        </div>
+                    </div>                  
+                </div >
+            </div>
+        <!--fim Vitrine Produtos Populares-->
+
+            <!--Sessões de Compras-->
+            <div id="sessoes">
+                <div class="page-inner-content">
+                    <h3 class="section-title">Sessões de Produtos</h3> 
+                    <div class="subtitle-underline"></div>
+                    <div class="cols cols-4">
+                        <div class="product">
+                            <img src="imagens/SessaoLimpeza.png" alt="">
+                        </div>
+                        <div class="product">
+                            <img src="imagens/SessaoHortifruti.png" alt="">
+                        </div>
+                        <div class="product">
+                            <img src="imagens/SessaoAcougue.png" alt="">
+                        </div>
+                        <div class="product">
+                            <img src="imagens/SessaoPadaria.png" alt="">
+                        </div>
+                        <div class="product">
+                            <img src="imagens/SessaoCereais.png" alt="">
+                        </div>
+                        <div class="product">
+                            <img src="imagens/SessaoGuloseimas.png" alt="">
+                        </div>
+                    </div>                  
+                </div >
+            </div>
+        </main>
+        <!--fim sessão-->
+
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu-button");
+
+        menuButton.addEventListener("click", () => {
+            navbar.classList.toggle("show-menu");
+        });
+    </script>
+
+</body>
+</html>
